@@ -48,7 +48,7 @@ class PowerCalculator {
 
         std::string signAndDoubleFilter(std::string expr);
 
-        bool containsFirstPriorityOperator(std::string expr);
+        bool containsFirstPriorityOperator(std::string expr);                                                                               
         bool containsSecondPriorityOperator(std::string expr);
         char getFirstPrioritySign(std::string expr);
         char getSecondPrioritySign(std::string expr);
