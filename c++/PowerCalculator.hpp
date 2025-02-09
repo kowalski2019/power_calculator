@@ -43,8 +43,11 @@ class PowerCalculator {
         bool containsDot(std::string expr);
         bool isSubSign(char sign);
         bool isAddSign(char sign);
+        bool isMulSign(char sign);
+        bool isDivSign(char sign);
+        bool isModSign(char sign);
 
-        std::string getExprValue(std::string expr);
+        std::string getExpressionValue(std::string expr);
 
         std::string signAndDoubleFilter(std::string expr);
 
@@ -65,8 +68,9 @@ class PowerCalculator {
         int getDivSignFirstIndex(std::string expr);
         int getModSignFirstIndex(std::string expr);
 
-        std::string checker(std::string expr);
-        std::string doCalculation(std::string expr, char sign, int i);
+        std::string simplifyOperatorConcatenation(std::string expr);
+        bool checkOperatorConcatenation(std::string expr);
+         std::string doCalculation(std::string expr, char sign, int i);
         std::string reverseString(std::string str);
 
         std::string expressionReducer(std::string expr);
@@ -86,8 +90,6 @@ class PowerCalculator {
         void updateVariable(std::string symb, std::string newVal);
 
         void lrParenthesisChecker(std::string expr);
-
-
 
 };
 
