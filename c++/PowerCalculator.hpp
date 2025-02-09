@@ -58,8 +58,8 @@ class PowerCalculator {
 
         bool isNumber(std::string expr);
 
-        std::array<std::string, 2> subsleft(std::string left);
-        std::array<std::string, 2> subsright(std::string right);
+        std::array<std::string, 2> splitLeftNumberLiteral(std::string left);
+        std::array<std::string, 2> splitRightNumberLiteral(std::string right);
 
         int findChar(std::string expr, char c, bool firstApparition = true, int start = 0, int end = -1);
         int getAddSignFirstIndex(std::string expr);

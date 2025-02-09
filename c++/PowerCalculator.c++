@@ -327,8 +327,8 @@ std::string PowerCalculator::doCalculation(std::string expr, char sign, int i)
     bool isResInteger = false;
     int operatorIndex,operatorIndexPlusOne;
     operatorIndex=i; operatorIndexPlusOne=i+1;
-    std::array<std::string, 2> subsleftRes = this->subsleft(expr.substr(0, operatorIndex));
-    std::array<std::string, 2> subsrightRes = this->subsright(expr.substr(operatorIndexPlusOne));
+    std::array<std::string, 2> subsleftRes = this->splitLeftNumberLiteral(expr.substr(0, operatorIndex));
+    std::array<std::string, 2> subsrightRes = this->splitRightNumberLiteral(expr.substr(operatorIndexPlusOne));
 
     left = subsleftRes[1];
     right = subsrightRes[1];

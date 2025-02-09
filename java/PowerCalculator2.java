@@ -386,7 +386,7 @@ static String[] subsleft(String left){
     a=i; z=i+1;
        left=subsleft(expr.substring(0,a))[1].trim();
        right=subsright(expr.substring(z))[1].trim();
-       System.out.println("l: " + left + "  r: " + right);
+       //System.out.println("l: " + left + "  r: " + right);
        if(isIdent(left)){
         if(isVarAlreadyDefined(left)){
            left=getVarValFromSymTable(left);
